@@ -1,0 +1,108 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('fundo_loja.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fundo escuro semitransparente para melhorar o contraste */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #ff408079;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+/* Estilo dos inputs */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* Botão adicionar produto */
+input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff1c5a;
+}
+
+/* Estilo da lista de produtos */
+.table-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #ff4081;
+    color: white;
+}
+
+table td a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo da mensagem de erro */
+.error-message {
+    color: #ff4081;
+    font-weight: bold;
+    margin-top: 10px;
+}
